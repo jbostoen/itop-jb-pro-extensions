@@ -46,9 +46,19 @@ There's also a **dashlet** to show all objects of a class on a map. Here, it als
 * With these interface, additional controls can be added to the toolbar above the map or within the actual map (HTML) object.
 
 ## Screenshots
-* ![Object details](screenshots/20190711_object_details.PNG)
-* ![Dashlet](screenshots/20190711_dashlet.PNG)
-* ![Clustering and basemap](screenshots/20190824_basemap_and_clustering.PNG)
+
+* There's a map tab when viewing the object details.  
+* When modifying, there's an option to clear the geometry and pick a geometry type (Point, LineString, Polygon); predefined in the datamodel.  
+* Extensions are possible (but not included), such as an address lookup bar.  
+* Maps can be rotated (ALT + Shift + drag) or put into fullscreen (small button top right).
+![Object details](screenshots/20201026_object_details_editor.png)
+
+* Includes a dashlet with a search/filter bar, similar to iTop's native lists.  
+* There's also a cluster feature. 
+* Clicking the map on an empty spot will show the object creation dialog with the (point) geometry prefilled.  
+* Clicking a feature shows (limited) details (only 'alphanumerical' attributes are supported at this moment, not pictures/data).  
+* This dashlet uses a map with a georeferenced image.  
+![Dashlet](screenshots/20201026_dashlet_filter_rotated_georeferenced_map.png)
 
 
 # Guide
@@ -93,7 +103,7 @@ iTop internals
 * how to redirect to iTop new object creation page AND prefill information
 
 ## Libraries
-* OpenLayers 6.3.1
+* OpenLayers 6.3.4
 * Proj4JS 2.6.2
 
 ## Requirements
