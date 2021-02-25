@@ -34,18 +34,18 @@ The user can directly enter the two factor code when authenticating to iTop usin
 
 
 If it's the first time and two factor authentication has been enforced in the backend, the user will have to set up a two factor code.
-![Initial set up](20210225_first_setup_when_enforced.png)
+![Initial set up](screenshots/20210225_first_setup_when_enforced.png)
 
 
 The secret can be updated by the user (once authenticated) in the console (classic backend)
-![Backend preferences](20210225_console_preferences.png)
+![Backend preferences](screenshots/20210225_console_preferences.png)
 
 The secret can be updated by the user (once authenticated) in the portal (modern frontend)
-![Backend preferences](20210225_portal_preferences.png)
+![Backend preferences](screenshots/20210225_portal_preferences.png)
 
 In the current concept (this can become more strict upon development requests!),  
 people with access to the person object can configure two factor authentication to be enforced.
-![Enforce two factor authentication](20210225_person.png)
+![Enforce two factor authentication](screenshots/20210225_person.png)
 
 
 # Guide
