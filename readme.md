@@ -17,11 +17,12 @@ Please get in touch to discuss the terms: **jbostoen.itop@outlook.com**
 * [Ticket merge](jb-ticket-merge)  
   Merge tickets.
 
+* [Two factor authentication](jb-login-authenticator)
+  Add two factor authentication to traditional login.
 
 # Work in progress
 
 Some projects are work in progress.
 Please get in touch to discuss the terms or how to speed up development: **jbostoen.itop@outlook.com**
 
-* Two factor authentication (using Google Authenticator).
 
