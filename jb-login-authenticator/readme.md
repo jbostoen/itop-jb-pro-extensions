@@ -1,6 +1,6 @@
 # jb-login-authenticator
 
-⚠ This is still a (working) concept. Initial supporters will be able to determine features.
+⚠ This is a working concept. Initial supporters will be able to determine features.
 For now, it only works with classic (username/password) authentication.
 Upon request and commitment, I'm willing to develop this so it could also work with for instance LDAP authentication.
 
@@ -46,6 +46,11 @@ The secret can be updated by the user (once authenticated) in the portal (modern
 In the current concept (this can become more strict upon development requests!),  
 people with access to the person object can configure two factor authentication to be enforced.
 ![Enforce two factor authentication](screenshots/20210305_person.png)
+
+# Features which will be developed upon sponsoring
+
+* Send OTP token to e-mail
+* Send OTP token to SMS services (API documentation will be requested!)
 
 
 # Guide

@@ -17,8 +17,8 @@ Please get in touch to discuss the terms: **jbostoen.itop@outlook.com**
 * [Ticket merge](jb-ticket-merge)  
   Merge tickets.
 
-* [Two factor authentication](jb-login-authenticator)  
-  Add two factor authentication to traditional login.
+* [Two factor authentication](jb-login-authenticator) OTP-code
+  Add two factor authentication to traditional login methods.
 
 # Work in progress
 
