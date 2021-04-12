@@ -20,11 +20,17 @@ If you want to use this extension and get support, please get in touch to discus
 
 
 ## What?
-Adds two factor authentication to iTop.
+Extends iTop with two factor authentication using authenticator apps (TOTP).
 
-The two factor authentication can be enforced on the person object (due to technical limitations, it's not on the user object).
-
+Allows iTop administrators or people with rights to the Person class to enforce the use of a two factor code. 
 Upon initial enforcement, users will be forced to set up their two factor authentication upon first log on with plain credentials.
+
+It should work with:
+* Authy
+* Authenticator extension for FireFox and Google Chrome
+* Google Authenticator
+* Microsoft Authenticator
+* any generic authenticator app
 
 
 ## Screenshots
@@ -62,6 +68,10 @@ people with access to the person object can configure two factor authentication 
 
 
 ## Requirements
+
 * iTop 2.7
 * PHP 7.2 or newer
 
+* iTop extensions
+  * [jb-authenticationmethod](https://github.com/jbostoen/itop-jb-authenticationmethod)
+  
