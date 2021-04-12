@@ -1,9 +1,4 @@
 # jb-login-authenticator
-
-⚠ This is a working concept. Initial supporters will be able to determine features.
-For now, it only works with classic (username/password) authentication.
-Upon request and commitment, I'm willing to develop this so it could also work with for instance LDAP authentication.
-
 Copyright (C) 2021 Jeffrey Bostoen
 
 [![License](https://img.shields.io/github/license/jbostoen/iTop-custom-extensions)](https://github.com/jbostoen/iTop-custom-extensions/blob/master/license.md)
