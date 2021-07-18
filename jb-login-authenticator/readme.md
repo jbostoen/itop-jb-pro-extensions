@@ -6,7 +6,7 @@ Copyright (C) 2021 Jeffrey Bostoen
 🍻 ☕
 
 Need assistance with iTop or one of its extensions?  
-Need custom development?  
+Need custom development? Interested in this extension?  
 Please get in touch to discuss the terms: **jbostoen.itop@outlook.com**
 
 ## Pro extension
@@ -15,14 +15,19 @@ If you want to use this extension and get support, please get in touch to discus
 
 
 ## What?
-Extends iTop with two factor authentication using authenticator apps (TOTP).
+This extension makes it possible for iTop users to login in a more secure way.   
+After the traditional login with regular credentials, it requires a two factor code.  
+Users get this TOTP code from their preferred authenticator app.
 
-Allows iTop administrators or people with rights to the Person class to enforce the use of a two factor code. 
-Upon initial enforcement, users will be forced to set up their two factor authentication upon first log on with plain credentials.
+The extension allows iTop administrators or users with modify rights on the Person class to enforce the use of a two factor code.  
+Otherwise, the use of two factor authentication remains optional. 
+
+Upon enforcement, users will be required to set up their two factor authentication after logging in with their basic plain credentials.
+
 
 It should work with:
 * Authy
-* Authenticator extension for FireFox and Google Chrome
+* Authenticator extension for MS Edge, FireFox and Google Chrome
 * Google Authenticator
 * Microsoft Authenticator
 * any generic authenticator app
@@ -30,28 +35,32 @@ It should work with:
 
 ## Screenshots
 
-The user can directly enter the two factor code when authenticating to iTop using classic credentials.
+The user can directly enter the two factor code when authenticating to iTop using classic credentials.  
 ![Login form - user can enter two factor code](screenshots/20210305_login.png)
 
 
-If it's the first time and two factor authentication has been enforced in the backend, the user will have to set up a two factor code.
+If it's the first time and two factor authentication has been enforced in the backend,  
+the user will have to set up a two factor code.  
 ![Initial set up](screenshots/20210305_first_setup_when_enforced.png)
 
 
-The secret can be updated by the user (once authenticated) in the console (classic backend)
+The secret can be updated by the user (once authenticated) in the console (classic backend)  
 ![Backend preferences](screenshots/20210305_console_preferences.png)
 
-The secret can be updated by the user (once authenticated) in the portal (modern frontend)
+
+The secret can be updated by the user (once authenticated) in the portal (modern frontend)  
 ![Portal preferences](screenshots/20210305_portal_preferences.png)
 
+
 In the current concept (this can become more strict upon development requests!),  
-people with access to the person object can configure two factor authentication to be enforced.
+people with access to the person object can configure two factor authentication to be enforced.  
 ![Enforce two factor authentication](screenshots/20210305_person.png)
 
 # Features which will be developed upon sponsoring
 
-* Send OTP token to e-mail
-* Send OTP token to SMS services (API documentation will be requested!)
+* Send TOTP token to e-mail
+* Send TOTP token to SMS services (API documentation will be requested!)
+* Bypass based on HTTP header or IP ranges
 
 
 # Guide
@@ -70,3 +79,28 @@ people with access to the person object can configure two factor authentication 
 * iTop extensions
   * [jb-authenticationmethod](https://github.com/jbostoen/itop-jb-authenticationmethod)
   
+  
+## Known issues/limitations
+
+* The two factor secret is stored per user, not per contact. So the secret may be different depending on the login method ('form' vs 'external')
+* One two factor secret per person
+
+
+## Cookbook
+
+XML:
+* add an value to an existing dropdown list (AttributeEnum)
+
+PHP:
+* enhancing iTop's login process using available hooks
+
+
+## Credits
+
+To generate QR-codes, the [chillerlan/php-qrcode](https://github.com/chillerlan/php-qrcode) package is used.  
+⚠ Currently restricted to versions 3.2 (still supports PHP 7.2); as since 4.0 PHP 7.4 is required!
+
+The extension is also based on [PHPGangsta/GoogleAuthenticator](https://github.com/PHPGangsta/GoogleAuthenticator), released under a BSD-license.
+It can generate secrets, generate codes, validate codes and present a QR-Code for scanning the secret.  
+It implements TOTP according to RFC6238. A patch has been applied to make it compatible with Authy/Microsoft Authenticator/others.
+
