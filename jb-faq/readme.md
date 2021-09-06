@@ -49,6 +49,10 @@ The algorithm will find "OneDrive".
 The algorithm won't find anything if the user enters "OneDriv", as this does not match the word "one" nor "OneDrive".
 
 
+## Video presentation
+
+* https://youtu.be/2Z1Sny8LU4g
+
 ## Screenshots
 
 Note: screenshots might not be up to date; tweaks may have been made or new features may have been added.  
