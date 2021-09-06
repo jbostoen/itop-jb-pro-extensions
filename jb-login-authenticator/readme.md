@@ -32,6 +32,10 @@ It should work with:
 * Microsoft Authenticator
 * any generic authenticator app
 
+## Video presentation
+
+* https://www.youtube.com/watch?v=12Fb005uFJs
+
 
 ## Screenshots
 
