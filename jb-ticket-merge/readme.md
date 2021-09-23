@@ -9,8 +9,13 @@ Need assistance with iTop or one of its extensions?
 Need custom development? Interested in this extension?  
 Please get in touch to discuss the terms: **jbostoen.itop@outlook.com**
 
+## Video presentation
+
+* https://youtu.be/2_kujS5b15k
+
 
 ## What?
+
 
 ### Summary
 
