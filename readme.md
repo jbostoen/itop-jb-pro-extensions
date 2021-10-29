@@ -1,4 +1,5 @@
 # iTop pro extensions
+
 Copyright (C) 2019-2021 Jeffrey Bostoen
 
 [![License](https://img.shields.io/github/license/jbostoen/iTop-custom-extensions)](https://github.com/jbostoen/iTop-custom-extensions/blob/master/license.md)
@@ -7,7 +8,7 @@ Copyright (C) 2019-2021 Jeffrey Bostoen
 
 Need assistance with iTop or one of its extensions?  
 Need custom development?  
-Please get in touch to discuss the terms: **jbostoen.itop@outlook.com**
+Please get in touch to discuss the terms: **info@jeffreybostoen.be** / https://jeffreybostoen.be
 
 # Available extensions
 
@@ -32,4 +33,4 @@ Please get in touch to discuss the terms: **jbostoen.itop@outlook.com**
 # Work in progress
 
 Some projects are work in progress.
-Please get in touch to discuss the terms or how to speed up development: **jbostoen.itop@outlook.com**
+Please get in touch to discuss the terms or how to speed up development: **info@jeffreybostoen.be**

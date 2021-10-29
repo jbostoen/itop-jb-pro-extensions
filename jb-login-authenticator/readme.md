@@ -1,4 +1,5 @@
 # jb-login-authenticator
+
 Copyright (C) 2021 Jeffrey Bostoen
 
 [![License](https://img.shields.io/github/license/jbostoen/iTop-custom-extensions)](https://github.com/jbostoen/iTop-custom-extensions/blob/master/license.md)
@@ -6,12 +7,12 @@ Copyright (C) 2021 Jeffrey Bostoen
 🍻 ☕
 
 Need assistance with iTop or one of its extensions?  
-Need custom development? Interested in this extension?  
-Please get in touch to discuss the terms: **jbostoen.itop@outlook.com**
+Need custom development?  
+Please get in touch to discuss the terms: **info@jeffreybostoen.be** / https://jeffreybostoen.be
 
 ## Pro extension
+
 This extension was complex to develop and is now very feature rich, so this became a professional extension.
-If you want to use this extension and get support, please get in touch to discuss the terms: **jbostoen.itop@outlook.com**
 
 
 ## What?
