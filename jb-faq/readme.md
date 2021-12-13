@@ -74,14 +74,15 @@ Add proper key words in the field which will be used for description.
 Also consider adding alternative key words in other (even hidden) fields.  
 
 
-## Future
+## Future developments
 
-Sponsor to specify priority of these possible options:
+Sponsor to specify priority of these features:
 
 * highlight matching parts in FAQs (only in suggestion in portal, not in reply from agent)
 * in FAQs (or other article object of your choice): highlight what is (not) ignored
-* portal: link to actual FAQ page instead of adding the description in a collapsed way
-* user rating for FAQs - which is taken into account for matching
+* portal: link to actual FAQ page instead of showing just the title and a collapsable description
+* portal: user rating for FAQs - which is taken into account for matching
+* portal: keep track of both number of unique views per article (and most recent time), as well as showing this in the iTop's console (User Requests)
 
 
 ## Requirements
