@@ -12,8 +12,7 @@ Please get in touch to discuss the terms: **info@jeffreybostoen.be** / https://j
 
 ## Video presentation
 
-* https://youtu.be/2_kujS5b15k
-
+* https://www.youtube.com/watch?v=eSDZ-6ZxKZI
 
 ## What?
 
