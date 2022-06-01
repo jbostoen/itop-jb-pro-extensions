@@ -1,6 +1,6 @@
 # jb-login-authenticator
 
-Copyright (C) 2021 Jeffrey Bostoen
+Copyright (C) 2021 - 2022 Jeffrey Bostoen
 
 [![License](https://img.shields.io/github/license/jbostoen/iTop-custom-extensions)](https://github.com/jbostoen/iTop-custom-extensions/blob/master/license.md)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/jbostoen)
@@ -16,6 +16,7 @@ This extension was complex to develop and is now very feature rich, so this beca
 
 
 ## What?
+
 This extension makes it possible for iTop users to login in a more secure way.   
 After the traditional login with regular credentials, it requires a two factor code.  
 Users get this TOTP code from their preferred authenticator app.
@@ -32,10 +33,6 @@ It should work with:
 * Google Authenticator
 * Microsoft Authenticator
 * any generic authenticator app
-
-## Video presentation
-
-* https://www.youtube.com/watch?v=12Fb005uFJs
 
 
 ## Screenshots
@@ -69,6 +66,7 @@ people with access to the person object can configure two factor authentication 
 
 
 # Guide
+
 * See documentation included with extension
 
 
@@ -78,8 +76,8 @@ people with access to the person object can configure two factor authentication 
 
 ## Requirements
 
-* iTop 2.7
-* PHP 7.2 or newer
+* iTop 2.7 or 3.0
+* PHP 7.4 or newer
 
 * iTop extensions
   * [jb-authenticationmethod](https://github.com/jbostoen/itop-jb-authenticationmethod)
@@ -87,8 +85,7 @@ people with access to the person object can configure two factor authentication 
   
 ## Known issues/limitations
 
-* The two factor secret is stored per user, not per contact. So the secret may be different depending on the login method ('form' vs 'external')
-* One two factor secret per person
+* One two factor secret per person (even if this person has different user accounts)
 
 
 ## Cookbook
@@ -99,13 +96,26 @@ XML:
 PHP:
 * enhancing iTop's login process using available hooks
 
+## Requirements
+
+PHP 7.4 or higher
 
 ## Credits
 
-To generate QR-codes, the [chillerlan/php-qrcode](https://github.com/chillerlan/php-qrcode) package is used.  
-⚠ Currently restricted to versions 3.2 (still supports PHP 7.2); as since 4.0 PHP 7.4 is required!
+To generate QR-codes, the [chillerlan/php-qrcode](https://github.com/chillerlan/php-qrcode) package is used. 
 
 The extension is also based on [PHPGangsta/GoogleAuthenticator](https://github.com/PHPGangsta/GoogleAuthenticator), released under a BSD-license.
 It can generate secrets, generate codes, validate codes and present a QR-Code for scanning the secret.  
 It implements TOTP according to RFC6238. A patch has been applied to make it compatible with Authy/Microsoft Authenticator/others.
 
+
+## Feature ideas
+
+Sponsor to speed up development of these features:
+
+- [ ] Protection against Brute Forcing MFA (time-out, lock out indefinitely, ...)
+
+
+## Sponsors
+
+Special thanks to [PC-Notdienst](https://www.pc-notdienst.com/) for sponsoring the trusted networks feature.
