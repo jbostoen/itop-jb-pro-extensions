@@ -16,7 +16,7 @@ Please get in touch to discuss the terms: **info@jeffreybostoen.be** / https://j
   Add geometry (point, linestring, polygon) to iTop objects.  
   This also comes with a map dashlet.
 
-* [Portal URL brick](jb-portal-url-brick)
+* [Portal URL brick](jb-portal-url-brick)  
   Add a URL brick to your iTop's user portal.
 
 * [Suggested FAQs](jb-faq)  
