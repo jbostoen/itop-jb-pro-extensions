@@ -35,6 +35,10 @@ It should work with:
 * any generic authenticator app
 
 
+It should work with typical iTop configurations: built-in iTop users (UserLocal), LDAP users (UserLDAP) and externally authenticated users (UserExternal).  
+Other types of users may work out of the box, but this is not guaranteed and untested.  
+If needed, please consult before purchasing.
+
 ## Screenshots
 
 The user can directly enter the two factor code when authenticating to iTop using classic credentials.  
@@ -114,6 +118,7 @@ It implements TOTP according to RFC6238. A patch has been applied to make it com
 Sponsor to speed up development of these features:
 
 - [ ] Protection against Brute Forcing MFA (time-out, lock out indefinitely, ...)
+- [ ] Trusted browser
 
 
 ## Sponsors
